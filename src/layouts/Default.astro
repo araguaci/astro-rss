@@ -1,0 +1,18 @@
+---
+import PageSupportingDarkmode from "./PageSupportingDarkmode.astro";
+import BaseFooter from "@components/BaseFooter.astro";
+import BaseHeader from "@components/BaseHeader.astro";
+import BaseHead from "@components/BaseHead.astro";
+import '../styles/global.css'
+---
+
+<PageSupportingDarkmode>
+	<BaseHead title="Elian's Astro Starter" />
+	<body>
+		<BaseHeader />
+		<main>
+			<slot />
+		</main>
+		<BaseFooter />
+	</body>
+</PageSupportingDarkmode>
